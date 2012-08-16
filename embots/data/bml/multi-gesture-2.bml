@@ -1,0 +1,27 @@
+<!-- EMBOTS-BML Example
+     Single speaker but listener reactions -->
+
+
+<bml id="b1" agent="Alfonse">
+   <speech id="s" voice="Spike">
+     <text>
+        <sync id="0" /> Welcome, <sync id="1" />  my name is Alfonse,
+        <sync id="2" /> let me  show you the  expressivity <sync id="3" />
+        of virtual characters <sync id="4" /> in this demo .
+    </text>
+   </speech>
+
+    <gesture id="g1" type="lexicalized" lexeme="cup_LH" stroke_start="s:1" />
+
+    <gesture id="g2" type="lexicalized" lexeme="bridge_RH" stroke_end="s:3"/>
+
+    <gesture id="g3" agent="Amber" type="lexicalized" lexeme="FINGERRING_LH" stroke_start="s:3"
+     stroke_end="s:4"/>
+
+
+    <gesture id="n2" agent="Amber" type="lexicalized" lexeme="NOD" stroke_end="g2:stroke_end"/>
+    <gesture id="h3" type="lexicalized" lexeme="TILT" stroke_end="g3:stroke_start"/>
+
+    <face id="f1" type="happy" stroke_start="s:0" stroke_end="s:2"/>
+    <face id="f2" type="eyebrows" stroke_start="s:2" stroke_end="s:2+0.5"/>
+</bml>

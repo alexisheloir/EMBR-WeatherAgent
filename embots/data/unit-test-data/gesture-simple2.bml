@@ -1,0 +1,8 @@
+<bml>
+   <speech id="s1"> 
+     <text> <sync id="1"/> Look at this gesture <sync id="2"/> it was quite synchronized.
+    </text>
+   </speech>
+   <gesture id="g2" type="LEXICALIZED" lexeme="calm"
+            stroke_end="s1:1" />
+</bml>

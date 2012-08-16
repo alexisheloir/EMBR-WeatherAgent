@@ -1,0 +1,29 @@
+- 06 Jan 2011
+    - repaired modified
+    - repaired save single behavior
+    - added "del" for behavior list
+
+
+++++++++++++++ version 0.9.5 ++++++++++++++
+
+- 04 Jan 2011
+    - repaired embr reader to recognize hand shape constraint
+    - export function
+
+
+++++++++++++++ version 0.9.4 ++++++++++++++
+
+- 21 Dec 2010
+  - extended facial expression slider to 150%
+
+++++++++++++++ version 0.9.3 ++++++++++++++
+
+- 07 Sep 2010
+  - fixed builder bug (agent would not move)
+    now sequences all "asap" with relative timing
+  - fixed gesture until "block 2H"
+  - fixed lexicon until "cup RH"
+
+- 06 Sep 2010 +++ KONVENS DEMO +++
+  - behavior builder broken
+    reason: "0" instead of "+0" in pose sequence.

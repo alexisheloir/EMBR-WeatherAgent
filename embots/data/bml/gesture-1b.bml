@@ -1,0 +1,20 @@
+<bml>
+
+   <speech id="s">
+     <text>
+	I can display nonverbal behaviors <sync id="5" />
+        like smiling or gesturing <sync id="6" />,
+	this <sync id="7" /> can be used for communicating emotions <sync id="8" />
+	or regulating conversations <sync id="finish" />
+    </text>
+   </speech>
+
+    <gesture id="g2" type="lexicalized" lexeme="dismiss_LH" stroke_end="s:5"/>
+
+    <gesture id="g1" type="lexicalized" lexeme="cup_2H" stroke_start="s:1"/>
+
+    <gesture id="n1" type="lexicalized" lexeme="NOD" stroke_end="s:8"/>
+
+    <face id="f1" type="angry" start="s:7" end="s:finish"/>
+
+</bml>

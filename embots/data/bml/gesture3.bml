@@ -1,0 +1,11 @@
+<bml>
+   <speech id="s">
+     <text>
+        Thanks <sync id="1" /> to all of you
+	for your attention
+	and patience and questions <sync id="2" /> and remarks .
+    </text>
+   </speech>
+   <gesture id="g1" type="lexicalized" lexeme="frame_2H" ready="s:1"
+   relax="s:2"/>
+</bml>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bml id="bml1" xmlns="http://www.mindmakers.org/projects/BML">
+    <speech id="s1" language="en-GB"
+        text="Look at this gesture it was quite synchronized. " xmlns:ssml="http://www.w3.org/2001/10/synthesis">
+        <ssml:mark name="s1:tm1"/>
+Look
+
+ <mary:syllable accent="1"
+            stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="95" end="0.095375" p="l"/>
+            <mary:ph d="79" end="0.1741875" p="U"/>
+            <mary:ph d="85" end="0.25975" p="k"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm2"/>
+at
+
+ <mary:syllable stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="127" end="0.386375" p="{"/>
+            <mary:ph d="76" end="0.462625" p="t"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm3"/>
+this
+
+ <mary:syllable stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="60" end="0.5220625" p="D"/>
+            <mary:ph d="45" end="0.56749994" p="I"/>
+            <mary:ph d="98" end="0.6658125" p="s"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm4"/>
+gesture
+
+
+ <mary:syllable accent="1"
+            stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="95" end="0.76" p="dZ"/>
+            <mary:ph d="89" end="0.84956247" p="E"/>
+            <mary:ph d="96" end="0.94562495" p="s"/>
+        </mary:syllable>
+        <mary:syllable xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="80" end="1.0257499" p="tS"/>
+            <mary:ph d="47" end="1.072875" p="r="/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm5"/>
+it
+
+ <mary:syllable stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="113" end="1.18575" p="I"/>
+            <mary:ph d="17" end="1.2020625" p="t"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm6"/>
+was
+
+ <mary:syllable accent="1"
+            stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="91" end="1.2939376" p="w"/>
+            <mary:ph d="30" end="1.323125" p="A"/>
+            <mary:ph d="72" end="1.3953124" p="z"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm7"/>
+quite
+
+ <mary:syllable stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="102" end="1.4971874" p="k"/>
+            <mary:ph d="45" end="1.5423124" p="w"/>
+            <mary:ph d="88" end="1.6309999" p="AI"/>
+            <mary:ph d="68" end="1.6986874" p="t"/>
+        </mary:syllable>
+        <ssml:mark name="s1:tm8"/>
+synchronized
+
+
+
+ <mary:syllable
+            accent="1" stress="1" xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="113" end="1.8114374" p="s"/>
+            <mary:ph d="74" end="1.8858124" p="I"/>
+            <mary:ph d="68" end="1.9534374" p="N"/>
+        </mary:syllable>
+        <mary:syllable xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="90" end="2.043875" p="k"/>
+            <mary:ph d="13" end="2.0569375" p="r"/>
+            <mary:ph d="31" end="2.0874999" p="@"/>
+        </mary:syllable>
+        <mary:syllable xmlns:mary="http://mary.dfki.de/2002/MaryXML">
+            <mary:ph d="57" end="2.1446874" p="n"/>
+            <mary:ph d="189" end="2.33375" p="AI"/>
+            <mary:ph d="81" end="2.414" p="z"/>
+            <mary:ph d="71" end="2.4858751" p="d"/>
+        </mary:syllable>
+.
+ <mary:boundary duration="200" id="b67"
+            start="s1:tm9" type="HH" xmlns:mary="http://mary.dfki.de/2002/MaryXML"/>
+        <ssml:mark name="s1:tm9"/>
+        <pitchaccent end="s1:tm2" id="xpa1" start="s1:tm1" time="0.13006249999999997"/>
+        <pitchaccent end="s1:tm5" id="xpa4" start="s1:tm4" time="0.805312475"/>
+        <pitchaccent end="s1:tm7" id="xpa6" start="s1:tm6" time="1.299125"/>
+        <pitchaccent end="s1:tm9" id="xpa8" start="s1:tm8" time="1.8259374"/>
+    </speech>
+</bml>

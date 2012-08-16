@@ -1,0 +1,26 @@
+<bml agent="Alphonse">
+
+   <speech id="s" agent="Amber">
+     <text>
+	I can display nonverbal behaviors <sync id="5" time="5" />
+        like smiling or gesturing <sync id="6" time="6"/>,
+	this <sync id="7" time="7"/> can be used for communicating emotions <sync id="8" time="8"/>
+	or regulating conversations <sync id="finish" time="9" />
+    </text>
+   </speech>
+
+    <gesture id="g2" agent="Amber" type="lexicalized" lexeme="dismiss_LH" stroke_end="s:5"/>
+
+    <gesture id="g1" type="lexicalized" lexeme="cup_2H" stroke_start="s:1"/>
+
+    <!-- gesture that does not exist -->
+    <gesture id="g1" type="lexicalized" lexeme="UNKNOWN" stroke_start="s:1"/>
+
+    <!-- prolonged hold -->
+    <gesture id="g4" type="lexicalized" lexeme="FINGERRING_LH"
+    stroke_start="s:5" stroke_end="s:7"/>
+
+
+    <face id="f1" type="angry" start="s:7" end="s:finish"/>
+
+</bml>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment User.Id="User2">
+  
+        <Country Name="Germany" Presentation.Style="1">
+
+            <City Weather.Condition="1" Climate="1" />
+            <City Weather.Condition="2" Climate="1" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="1" />
+            <City Weather.Condition="2" Climate="1" />
+
+        </Country>
+
+        <Country Name="Spain" Presentation.Style="1">
+
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="1" />
+            <City Weather.Condition="1" Climate="1" />
+
+        </Country>
+
+        <Country Name="France" Presentation.Style="1">
+
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="1" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="1" />
+
+        </Country>
+
+</Experiment>
+
+	

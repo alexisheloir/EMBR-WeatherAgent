@@ -1,0 +1,75 @@
+**********************************************************************
+
+DOCUMENTATION OF EMBOTS-BML
+
+(c) 2010 EMBOTS Research Group, DFKI, Germany
+
+**********************************************************************
+
+This file documents the current BML dialect/subset that we currently
+support in the EMBOTS framework.
+
+
+*** [0] BML BLOCK ***
+
+On the top level, everything is bracketed by a BML tag:
+
+<bml id="b1">
+ ...
+</bml>
+
+Strictly speakind, an identifier is required but we usually skip it.
+
+*** [1] SPEECH ***
+
+Speech for a TTS is formulated thus:
+
+   <speech id="s32">
+     <text>
+        <sync id="0" /> Welcome, <sync id="1" />  my name is Amber,
+        <sync id="2" /> let me  show you the  expressivity <sync id="3" />
+        of virtual characters in this demo.
+    </text>
+   </speech>
+
+Sync points are defined like this:
+
+<sync id="foo25" />
+
+To refer to the sync points in the <speech> tag you use identifiers like
+
+s32:2
+
+*** [2] GESTURE ***
+
+Gestures that are lexicalized look like this:
+
+<gesture id="g1" type="lexicalized" lexeme="cup_2H" stroke_start="s32:2" />
+
+Possible sync point attributes are:
+
+start
+ready
+stroke_start
+stroke
+stroke_end
+relax
+end
+
+*** [3] FACE ***
+
+A facial expression looks like this:
+
+<face id="f1" type="happy" stroke_start="s:0" stroke_end="s:1"/>
+
+Possible types are:
+
+neutral
+happy
+angry
+disgusted
+afraid
+sad
+surprised
+sceptical
+eyebrows

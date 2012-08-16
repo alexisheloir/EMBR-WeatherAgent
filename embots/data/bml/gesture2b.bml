@@ -1,0 +1,12 @@
+<bml>
+   <speech id="s">
+     <text>
+        Thanks <sync id="1" /> to all of you
+	for your <sync id="f"/> attention <sync id="2" />
+	and patience in this little demo <sync id="3"/>
+    </text>
+   </speech>
+   <gesture id="g1" type="lexicalized" lexeme="dismiss_LH"
+   ready="s:1" stroke_start="s:2" relax="s:3"/>
+   <face id="f1" type="eyebrows" stroke_start="g1:stroke_start" stroke_end="g1:relax"/>
+</bml>

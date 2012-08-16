@@ -1,0 +1,15 @@
+<!-- TWO GESTURES -->
+
+<bml>
+   <speech id="s1">
+     <text>
+        Many <sync id="0" time="0"/>  Thanks <sync id="1" time="0.2"/> to all of you for your attention, <sync id="2" time="1.26"/>
+	it is now time for questions.
+    </text>
+   </speech>
+
+   <gesture id="g1" type="lexicalized" lexeme="dismiss_LH" ready="s1:0"
+    stroke_start="s1:1" stroke_end="s1:2"/>
+
+    <gesture id="g2" type="lexicalized" lexeme="cup_2H" stroke_start="g1:stroke_end" />
+</bml>

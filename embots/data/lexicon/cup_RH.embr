@@ -1,0 +1,78 @@
+TIME_RESET
+
+BEGIN K_POSE_SEQUENCE  # --- LEXEME:cup_RH
+ CHARACTER:Alfonse
+ START:20
+ BEGIN K_POSE  # --- Pose 0 --- SYNC:start
+  TIME_POINT:+220
+  HOLD:0
+  BEGIN POSE_TARGET
+    BODY_GROUP:lhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSITION_CONSTRAINT
+    BODY_GROUP:rarm
+    TARGET:-0.2;-0.04;0
+    JOINT:rhand
+    OFFSET:0;0;0
+  END
+  BEGIN SWIVEL_CONSTRAINT
+    BODY_GROUP:rarm
+    SWIVEL_ANGLE:72.0
+  END
+ END
+ BEGIN K_POSE  # --- Pose 1 --- SYNC:ready
+  TIME_POINT:+520
+  HOLD:1600
+  BEGIN POSE_TARGET
+    BODY_GROUP:lhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSITION_CONSTRAINT
+    BODY_GROUP:rarm
+    TARGET:-0.28;-0.24;0.2
+    JOINT:rhand
+    OFFSET:0;0;0
+  END
+  BEGIN ORIENTATION_CONSTRAINT
+    BODY_GROUP:rarm
+    DIRECTION:-0.12;0.38;-0.66
+    JOINT:rhand
+    NORMAL:Zaxis
+  END
+  BEGIN SWIVEL_CONSTRAINT
+    BODY_GROUP:rarm
+    SWIVEL_ANGLE:18.0
+  END
+ END
+ BEGIN K_POSE  # --- Pose 2 --- SYNC:end
+  TIME_POINT:+2420
+  HOLD:500
+  BEGIN POSE_TARGET
+    BODY_GROUP:lhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_open-relaxed
+  END
+  BEGIN POSITION_CONSTRAINT
+    BODY_GROUP:rarm
+    TARGET:-0.2;-0.04;0
+    JOINT:rhand
+    OFFSET:0;0;0
+  END
+  BEGIN SWIVEL_CONSTRAINT
+    BODY_GROUP:rarm
+    SWIVEL_ANGLE:72.0
+  END
+ END
+END

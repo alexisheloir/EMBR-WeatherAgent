@@ -1,0 +1,15 @@
+<bml>
+   <speech id="s">
+     <text>
+        <sync id="0" time="1" /> Welcome, <sync id="1" time="2"/>  my name is Amber,
+        <sync id="2" time="3" /> let me  show you the  expressivity <sync id="3" time="4"/>
+        of virtual characters in this demo.
+    </text>
+   </speech>
+
+   <!-- problem: specifying a stroke_end for a hold gesture -->
+    <gesture id="g1" type="lexicalized" lexeme="cup_2H" stroke_end="s:1" />
+
+    <gesture id="g2" type="lexicalized" lexeme="bridge_2H" end="s:3"/>
+
+</bml>

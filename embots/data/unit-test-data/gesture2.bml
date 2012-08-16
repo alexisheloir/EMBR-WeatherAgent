@@ -1,0 +1,25 @@
+<bml>
+
+   <speech id="s">
+     <text>
+        Welcome, <sync id="1" />  my name is Amber, <sync id="2" time=".5" />
+        let me show you the
+	expressivity  <sync id="3" time="1" /> of virtual characters
+	in this little demo, <sync id="4" time="1.8" />
+	I can display nonverbal behaviors <sync id="5" time="2.35"/>
+        like smiling or gesturing <sync id="6" />,
+	this <sync id="7" time="3.1"/> can be used for communicating emotions <sync id="8" time="4.33"/>
+	or regulating conversations <sync id="finish" />
+    </text>
+   </speech>
+
+
+<!--    <gesture id="g1" type="lexicalized" lexeme="cup_2H" end="s:1"/>-->
+
+   <gesture id="g2" type="lexicalized" lexeme="dismiss_LH"
+    stroke_end="s:4"/>
+
+  <gesture id="g3" type="lexicalized" lexeme="bridge_2H" stroke_start="s:2"/> 
+
+
+</bml>

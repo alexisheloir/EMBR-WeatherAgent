@@ -1,0 +1,33 @@
+<!-- BML snippet for showcasing facial expression -->
+<!-- (c) 2010 EMBOTS Group -->
+
+<bml id="b1">
+   <speech id="s">
+     <text>
+     <sync id="0" /> Facial expression test series,
+     <sync id="1" />this is a very big happy smile smile smile to start our facial picture show<sync id="2" />
+     and another break,
+     <sync id="3" />this is anger anger anger that I deeply feel inside<sync id="4" />
+     and another break,
+     <sync id="5" />and this is disgust disgust disgust written across my facial features<sync id="6" />
+     and another break,
+     <sync id="7" />now look at the fear fear and fear in my face for a change<sync id="8" />
+     and another break,
+     <sync id="9" />this really comes as a surprise surprise surprise as you can clearly see<sync id="10" />
+     and another break,
+     <sync id="11" />and how about a really sad sad face like this<sync id="12" />
+    and another break,
+     <sync id="13" />and finally a skeptical skeptical skeptical expression<sync id="14" />
+    and now, <sync id="15"/> back to neutral to finish this little demo.
+    </text>
+   </speech>
+   <face id="f0" type="neutral" stroke_start="s:0" />
+   <face id="f1" type="happy" stroke_start="s:1" stroke_end="s:2"/>
+   <face id="f2" type="angry" stroke_start="s:3" stroke_end="s:4"/>
+   <face id="f3" type="disgusted" stroke_start="s:5" stroke_end="s:6"/>
+   <face id="f4" type="afraid" stroke_start="s:7" stroke_end="s:8"/>
+   <face id="f5" type="surprised" stroke_start="s:9" stroke_end="s:10"/>
+   <face id="f6" type="sad" stroke_start="s:11" stroke_end="s:12"/>
+   <face id="f7" type="sceptical" stroke_start="s:13" stroke_end="s:14"/>
+   <face id="f8" type="neutral" stroke_start="s:15" />
+</bml>

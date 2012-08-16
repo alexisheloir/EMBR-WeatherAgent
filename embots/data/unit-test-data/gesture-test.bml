@@ -1,0 +1,13 @@
+<bml>
+   <speech id="s1">
+     <text>
+        Thanks <sync id="1" time="0.4"/> to all of you
+	for your attention, <sync id="2" time="1.26"/>
+	it is now time for questions.
+    </text>
+   </speech>
+   <gesture id="g1" type="lexicalized" lexeme="dismiss_LH" stroke_start="s1:2"/>
+   <!-- DOESNT WORK: -->
+   <!-- <gesture id="g1" type="lexicalized" lexeme="dismiss_LH" stroke_start="s1:2"/> -->
+   <!--<face id="f1" type="smile" stroke_start="s1:1" stroke_end="s1:2"/>-->
+</bml>

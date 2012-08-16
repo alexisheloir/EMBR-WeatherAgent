@@ -1,0 +1,58 @@
+TIME_RESET
+BEGIN K_POSE_SEQUENCE  # --- LEXEME:INDEXFINGER
+  CHARACTER:Amber
+  START:50
+#  FADE_IN:0
+#  FADE_OUT:500
+  TIME_WARP:EXP;3
+  BEGIN K_POSE  # --- SYNC:start
+   TIME_POINT:100   
+   HOLD:0
+   BEGIN POSITION_CONSTRAINT
+     BODY_GROUP:rarm
+     TARGET:-.3;-.2;-.4
+     JOINT:rhand
+     OFFSET:0.0;0.0;0.0
+   END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_open-relaxed
+  END
+  END
+  # This is actually an independent hold
+  BEGIN K_POSE  # --- SYNC:stroke_start
+   TIME_POINT:600
+   HOLD:600
+   BEGIN POSITION_CONSTRAINT
+     BODY_GROUP:rarm
+     TIME_WARP:EXP;4
+     TARGET:-.22;-.2;.38
+     JOINT:rhand
+     OFFSET:0.0;0.0;0.0
+   END
+   BEGIN ORIENTATION_CONSTRAINT
+     BODY_GROUP:rarm
+     DIRECTION:1;-.5;0
+     JOINT:rhand
+   END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_index
+  END
+  END
+  BEGIN K_POSE  # --- SYNC:end
+   TIME_POINT:2000
+   HOLD:0
+   BEGIN POSITION_CONSTRAINT
+     BODY_GROUP:rarm
+     TIME_WARP:TAN;2
+     TARGET:-.3;-.2;-.0
+     JOINT:rhand
+     OFFSET:0.0;0.0;0.0
+   END
+  BEGIN POSE_TARGET
+    BODY_GROUP:rhand
+    POSE_KEY:hands_open-relaxed
+  END
+  END
+END

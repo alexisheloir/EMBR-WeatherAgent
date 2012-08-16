@@ -1,0 +1,14 @@
+<BML id="b1" agent="Amber">
+
+
+     <SPEECH id="s1" voice="Poppy">
+          <TEXT>Hello. How are you today?</TEXT>
+     </SPEECH>
+
+
+     <SPEECH id="s2" agent="Alfonse" wait="1" voice="Spike">
+          <TEXT>I am fine. Thanks for asking.</TEXT>
+     </SPEECH>
+
+
+</BML>

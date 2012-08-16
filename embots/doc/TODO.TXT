@@ -1,0 +1,94 @@
+OVERALL FRAMEWORK
+=================
+
+- put voice in SPEECH block
+
+- add attributes for default_agent to bml block
+    * add to embots framework (select agent with it)
+- add attribute for agent to bml behavior
+
+--------------------------------------------------------------
+### CORRUPTED (43) ###
+  OK :( [Corrupt lexeme adapt-nose_LH ERROR] Does not respect sync point order.
+  ok :( [Corrupt lexeme emerge_2H_2 ERROR] Does not contain all of {START, READY, END}.
+  OK :( [Corrupt lexeme fling-down_2H ERROR] Does not respect sync point order.
+  OK :( [Corrupt lexeme fling-down_2H_2 ERROR] Does not contain all of {START, READY, END}.
+  OK :( [Corrupt lexeme fling-down_2H_3 ERROR] Does not respect sync point order.
+  OK :( [Corrupt lexeme frame_2H_2 ERROR] Does not respect sync point order.
+  ok :( [Corrupt lexeme heart_2H_2 ERROR] Does not contain all of {START, READY, END}.
+  ok :( [Corrupt lexeme idea_LH ERROR] Does not contain all of {START, READY, END}.
+  ok :( [Corrupt lexeme idea_RH ERROR] Does not contain all of {START, READY, END}.
+  ok :( [Corrupt lexeme more-or-less_LH ERROR] Does not respect sync point order.
+  ok :( [Corrupt lexeme more-or-less_RH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme no-idea_LH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme number_RH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme olli-looked-through_R ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme one-hand-other-hand_2H ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme open_2H ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme open_LH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme open_RH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme progress_2H_ ERROR] Does not contain all of {START, READY, END}. Does not respect sync point order.
+  :( [Corrupt lexeme purse_2H_2 ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme purse_LH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme refuse_LH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme refuse_LH_2 ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme refuse_RH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme refuse_RH_2 ERROR] Does not contain all of {START, READY, END}. Does not respect sync point order.
+  :( [Corrupt lexeme refuse_RH_3 ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme regress_2H ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme regress_RH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme strong_2H ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme sway_2H ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme sway_2H_2 ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme thought-grip_2H ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme thought-grip_LH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme thought-grip_RH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme TILT ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme two-throw_2H ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme umbrella_2H ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme umbrella_LH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme umbrella_RH ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme walls_2H ERROR] Does not contain all of {START, READY, END}.
+  :( [Corrupt lexeme wave_RH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme write_LH ERROR] Does not respect sync point order.
+  :( [Corrupt lexeme write_RH ERROR] Does not respect sync point order.
+
+
+
+- BEHAVIOR BUILDER:
+
+
+    * MAKE TABLE THREAD SAVE (see BB thread for updating!)
+
+    * rebuild table model...
+    * mark out mouthing
+    * move "time factor" bar somewhere else !!!
+
+    * export: correct agent (from existing...)
+        * delete other poses (make optional)
+    * save whole thing!
+    * adjust timing with timing slider (on beh. seq. level)
+    * table spacing
+    
+
+
+
+- EMBOTS: Frontend
+  - display lexicon name
+  - reload => also reload in generator
+
+- Keep in mind:
+  - a hold gesture cannot be set with stroke_end (alg. doesn't find sync point)
+  - double id's cause system to *ignore* prev. gestures!
+
+- LEXICON:
+  - principled way of making several scripts into one gesture
+
+- gesture generator:
+  - allow two gestures in parallel (diff. hands)
+  - allow gesture sequences
+
+- BML: multiple behaviors
+- EMBR: blending --> see also emotion generation
+- BML: add emotion tags (or: FML?)
+- BML: add autonomous behaviors

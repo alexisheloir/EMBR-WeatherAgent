@@ -1,0 +1,19 @@
+<!-- BML block for showcasing speech, gesture and facial expression -->
+<!-- (c) 2010 EMBOTS Group -->
+
+<bml id="b1" agent="Amber">
+   <speech id="s" voice="Prudence">
+     <text>
+        <sync id="0" /> Welcome, <sync id="1" />  my name is Amber,
+        <sync id="2" /> let me  show you the  expressivity <sync id="3" />
+        of virtual characters in this demo.
+    </text>
+   </speech>
+
+    <gesture id="g1" type="lexicalized" lexeme="cup_2H" stroke_start="s:1" />
+
+    <gesture id="g2" type="lexicalized" lexeme="bridge_2H" stroke_end="s:3"/>
+
+   <face id="f1" type="happy" stroke_start="s:0" stroke_end="s:1"/>
+   <face id="f2" type="eyebrows" stroke_start="s:2" stroke_end="s:2+0.5"/>
+</bml>
