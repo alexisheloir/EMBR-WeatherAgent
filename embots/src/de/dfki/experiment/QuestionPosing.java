@@ -20,7 +20,7 @@ public class QuestionPosing {
     
     public void intro() throws JMSException {
         //create and send presentation
-        String textString = "Let me pose some questions to you.";
+        String textString = "Let me pose some questions to you";
         String bmldoc = "";
         bmldoc = bmldoc.concat("<bml id=\"b5\">");
         bmldoc = bmldoc.concat("<speech id=\"s\">");

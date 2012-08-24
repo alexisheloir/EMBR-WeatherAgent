@@ -50,6 +50,8 @@ public class ETracker extends Component {
     int counter1=0;
     int counter2=0;
 
+    private boolean initialized=false;
+
     
     private EyeTrackerStrategy eyeTrackerStrategy=new EyeTrackerStrategy();
     private BlockingQueue<Location> locationQueue=new LinkedBlockingQueue<Location>();
@@ -95,11 +97,31 @@ public class ETracker extends Component {
     synchronized 
     @Override
     protected void act() throws IOException, JMSException {
+
+        if(!initialized)
+        {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(ETracker.class.getName()).log(Level.SEVERE, null, ex);
+            }finally
+            {
+                initialized=true;
+            }
+        }
         //get fresh eyetracking data and interprete it
-               if(locationQueue.size()<2 && agentAnimator.isConsumed())
+        try
+        {
+            if(locationQueue.size()<2 && agentAnimator.isConsumed())
                {
-                   locationQueue.add(eyeTrackerStrategy.getMostViewedLocation());
+                Location mostViewedLocation=eyeTrackerStrategy.getMostViewedLocation();
+                locationQueue.add(mostViewedLocation);
                }
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+               
     }
 
    

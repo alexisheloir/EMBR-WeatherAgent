@@ -149,7 +149,10 @@ public class UserGazeAtMap implements ObservableWeatherMap {
     }
     
     public String getLogLine(){
-        String logLine = data.timestamp+","+weatherMap.getGazeObject(data.x_eyepos_lefteye, data.y_eyepos_lefteye) +","+this.getWeatherMapName();
+
+       float xCurrentPos= data.x_eyepos_lefteye;
+        float yCurrentPos= data.y_eyepos_lefteye;
+        String logLine = data.timestamp+","+weatherMap.getGazeObject(xCurrentPos, yCurrentPos) +","+this.getWeatherMapName()+", co-ordinates ["+xCurrentPos+" , "+yCurrentPos+"]";
         return logLine;
     }
 }

@@ -577,7 +577,7 @@ public class Experiment extends Component {
      * create and send bml for introduction
      */
     private void introduction() throws JMSException {
-        String textString = "Hello, I'm Amber, the weather agent.";
+        String textString = "Hello, I'm Amber, the weather agent";
         String bmldoc = "";
         bmldoc = bmldoc.concat("<bml id=\"b1\">");
         bmldoc = bmldoc.concat("<speech id=\"s\">");
@@ -608,7 +608,7 @@ public class Experiment extends Component {
      * Create and send bml that forbids to choose the same city again
      */
     private void chooseAnotherCity() throws JMSException {
-        String textString = "You may not choose the same city twice. Please choose another city.";
+        String textString = "You may not choose the same city twice   Please choose another city";
         String bmldoc = "";
         bmldoc = bmldoc.concat("<bml id=\"b1\">");
         bmldoc = bmldoc.concat("<speech id=\"s\">");

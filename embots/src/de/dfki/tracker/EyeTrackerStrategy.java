@@ -54,8 +54,14 @@ public class EyeTrackerStrategy {
              zoneIndexWithMaxFreq=4 ;//default head zone
          }
 
-         
-         return new Location(GazeZone.getXZoneID(zoneIndexWithMaxFreq)*GazeZone.zoneXUnitDist+GazeZone.zoneXUnitDist/2, GazeZone.getYZoneID(zoneIndexWithMaxFreq)*GazeZone.zoneYUnitDist+GazeZone.zoneYUnitDist/2);
+
+         Location maxFreqLocation=new Location(GazeZone.getXZoneID(zoneIndexWithMaxFreq)*GazeZone.zoneXUnitDist+GazeZone.zoneXUnitDist/2, GazeZone.getYZoneID(zoneIndexWithMaxFreq)*GazeZone.zoneYUnitDist+GazeZone.zoneYUnitDist/2);
+         System.out.println(" zoneindexwith maxfreq: "+zoneIndexWithMaxFreq+" xzoneid:"+GazeZone.getXZoneID(zoneIndexWithMaxFreq)+" yzoneid:"+GazeZone.getYZoneID(zoneIndexWithMaxFreq));
+         System.out.println(" maxfreq location : "+maxFreqLocation.toString());
+
+
+
+         return maxFreqLocation;
 
     }
 
@@ -99,7 +105,13 @@ class EPositionUpdatorThread extends Thread {
 
     private void act()
     {
-        int currentZoneIndex= GazeZone.getZoneIndex(new Triple(liveData.x_eyepos_lefteye, liveData.y_eyepos_lefteye, 0));
+        try
+        {
+        float xLivePos=liveData.x_gazepos_lefteye;
+        float yLivePos=liveData.y_gazepos_lefteye;
+
+        //System.out.println("act- xlivepos:"+xLivePos+" ylivepos:"+yLivePos);
+        int currentZoneIndex= GazeZone.getZoneIndex(xLivePos,yLivePos );
         if(zoneIndexBufferList.size()==bucketSize)
         {
             int removedZoneIndex=zoneIndexBufferList.removeAt(0);
@@ -113,6 +125,14 @@ class EPositionUpdatorThread extends Thread {
             zoneIndexBufferList.add(currentZoneIndex);
             zoneIndexFrequencyMap.adjustOrPutValue(currentZoneIndex,1,1);
         }
+
+
+
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+      
 
     }
 

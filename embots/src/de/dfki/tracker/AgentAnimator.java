@@ -49,6 +49,10 @@ public class AgentAnimator extends Thread {
                  catch (JMSException ex) {
                     Logger.getLogger(AgentAnimator.class.getName()).log(Level.SEVERE, null, ex);
                 }
+               catch (Exception e)
+               {
+                   e.printStackTrace();
+               }
           
     }
 

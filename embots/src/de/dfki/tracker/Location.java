@@ -28,4 +28,10 @@ public class Location {
         return y_pos;
     }
 
+    @Override
+    public String toString() {
+        return "Location{" + "x_pos=" + x_pos + "y_pos=" + y_pos + '}';
+    }
+
+    
 }

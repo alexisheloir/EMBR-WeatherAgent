@@ -17,8 +17,8 @@ public class EyeTrackerData {
     private LogDataSingleton liveData=LogDataSingleton.getInstance();
 
     public  Triple computeTriple() {
-        float x = liveData.x_eyepos_lefteye;
-        float y = liveData.y_eyepos_lefteye;
+        float x = liveData.x_gazepos_lefteye;
+        float y = liveData.y_gazepos_lefteye;
         float z = 0;
         return new Triple(x, y, z);
     }
