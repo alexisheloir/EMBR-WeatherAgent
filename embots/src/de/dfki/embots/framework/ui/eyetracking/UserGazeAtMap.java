@@ -7,6 +7,7 @@ package de.dfki.embots.framework.ui.eyetracking;
 import de.dfki.carmina.eyeTrackerLogger.dataProcessor.LogData;
 import java.io.IOException;
 import de.dfki.embots.embrscript.Triple;
+import de.dfki.experiment.ConfigForExperiment;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -20,12 +21,12 @@ import java.util.ArrayList;
  */
 public class UserGazeAtMap implements ObservableWeatherMap {
 
+    private static final String EXPERIMENT_PATH = ConfigForExperiment.getProperties("Experiment.Setup.Path");
     private LogDataSingleton data;
     private WeatherMap weatherMap;
     //private UserGazeAtMapController userGazeAtMapController = new UserGazeAtMapController();
     private ArrayList<WeatherMapObserver> weatherMapObservers = new ArrayList<WeatherMapObserver>();
     boolean weightedLastInterval;
-    private static final String EXPERIMENT_PATH = "c:\\experiment\\";
     private String selectedCity;
             
     public UserGazeAtMap(String mapName) /*throws JMSException*/ {

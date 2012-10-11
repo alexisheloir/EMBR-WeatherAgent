@@ -35,7 +35,7 @@ import javax.swing.JButton;
 public class ETracker extends Component {
 
     public static final String NAME = "ETracker";
-    private static final String EXPERIMENT_PATH = ConfigForExperiment.getProperties("Experiment.Setup.Path");
+    private static final int presentation_mode = Integer.parseInt(ConfigForETracker.getProperties("ETracker.Presentation.Style"));
   
    
     private Sender bmlSender;
@@ -63,7 +63,7 @@ public class ETracker extends Component {
         initSenders();
         initReceivers();
      
-        agentAnimator=new AgentAnimator(this, locationQueue,3);
+        agentAnimator=new AgentAnimator(this, locationQueue,presentation_mode);
         agentAnimator.start();
     }
 

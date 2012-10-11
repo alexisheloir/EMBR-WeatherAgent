@@ -19,13 +19,15 @@ import java.util.logging.Level;
  * @author Andrey
  */
 public class Logger {
+
+    private static final String EXPERIMENT_PATH = ConfigForExperiment.getProperties("Experiment.Setup.Path");
     private File logFile;
     private String logLine;
     private UserGazeAtMapController userGazeAtMapController;
     private Boolean started = false;
     
     public Logger(UserGazeAtMapController userGazeAtMapController, int participant){
-        logFile = new File("C:\\experiment\\textlogs\\log" + participant + ".txt");
+        logFile = new File(EXPERIMENT_PATH+"textlogs\\log" + participant + ".txt");
         this.userGazeAtMapController = userGazeAtMapController;
     }
     

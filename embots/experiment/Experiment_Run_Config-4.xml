@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment User.Id="8">
+  
+        <Country Name="France" Presentation.Style="3">
+
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+            <City Weather.Condition="3" Climate="0" />
+            <City Weather.Condition="2" Climate="0" />
+       
+
+        </Country>
+
+</Experiment>
+
+	
