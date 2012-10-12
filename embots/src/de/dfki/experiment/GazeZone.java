@@ -11,6 +11,7 @@ package de.dfki.experiment;
  */
 public class GazeZone {
 
+    //range between -2 to 2
     private static float[][] xZoneCentres={{-1.0f,-.8f,-.76f,-.24f,-.24f}
                                             ,{-1.0f,-.8f,-.76f,-.24f,-.24f}
                                             ,{-1.0f,-.8f,-.76f,-.24f,-.24f}
